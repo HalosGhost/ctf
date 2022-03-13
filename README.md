@@ -8,9 +8,9 @@ In particular, this tooling was initially created while going through Project Eu
 # Usage
 
 ```console
-$ make NEXT=001 next    # NEXT defaults to the numeric successor of the highest-numbered directory in $PWD
+$ make next    # NEXT defaults to the numeric successor of the highest-numbered directory in $PWD (or `001` if none exist)
 $ cd 001
-$ make edit             # launch editor with all relevant files open
+$ make edit    # launch editor with all relevant files open
 ```
 
 To modify this for another language, you'll need to update `skel` to include the appropriate set of files, and `skel/mk` to reflect the rules you'd like to start with (e.g., replacing the recipes for your language).
