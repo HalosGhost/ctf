@@ -17,5 +17,8 @@ To modify this for another language, you'll need to update `skel` to include the
 
 # Status
 
-This code was all made purely to make CTFs more pleasant for myself; it doesn't include any helpful tooling to set it up for other languages (adaptations must currently be done manually).
+This code was all made purely to make CTFs more pleasant for myself.
 However, I will keep updating it as my tooling wants grow; and I will happily accept changes from anyone wanting to make it more flexible.
+
+A very minimal framework is available to set up this repository for other languages/ecosystems.
+To add support for a new language or ecosystem, simply add a new directory underneath `skel.d`, and set the `BASE` make variable appropriately when `make`ing a recipe.
