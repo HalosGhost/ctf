@@ -1,5 +1,6 @@
 MKDIR = mkdir -p --
 NEXT_AUTO := $(shell find . -maxdepth 1 -type d -regex '.*[0-9]+' -printf '%f\n' | sort -rn | awk '{l=length($$1); printf "%0*d", l, $$1 + 1; exit}')
+BASE := cxx
 
 ifndef NEXT_AUTO
 NEXT := 001
@@ -24,8 +25,6 @@ next: $(NEXT)
 
 %:
 	$(MKDIR) $@
-	cp skel/mk $@/Makefile
-	cp skel/cxx $@/main.cxx
-	cp skel/hxx $@/main.hxx
+	for i in skel.d/$(BASE)/*; do cp "$$i" $@/; done
 
 $(V).SILENT:
