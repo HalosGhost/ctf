@@ -1,8 +1,8 @@
 # Self-paced CTF Tooling
 
-Self-paced CTFs (like [Project Euler](https://projecteuler.net/), [cryptohack](https://cryptohack.org/), etc.) can be excellent source of skills-honing and practice, the process around diving in can sometimes be daunting.
+Self-paced CTFs (like [Project Euler](https://projecteuler.net/), [cryptohack](https://cryptohack.org/), etc.) can be an excellent source of skills-honing and practice, but the process around diving-in can sometimes be daunting.
 
-This repository includes the skeleton I use as tooling to begin/keep working on a CTF.
+This repository includes the skeleton I use as tooling to work on a CTF.
 In particular, this tooling was initially created while going through Project Euler using C++; however, it should be (and has been) easily adapted for other languages/CTFs.
 
 # Usage
