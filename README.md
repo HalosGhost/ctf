@@ -13,8 +13,6 @@ $ cd 001
 $ make edit    # launch editor with all relevant files open
 ```
 
-To modify this for another language, you'll need to update `skel` to include the appropriate set of files, and `skel/mk` to reflect the rules you'd like to start with (e.g., replacing the recipes for your language).
-
 # Status
 
 This code was all made purely to make CTFs more pleasant for myself.
