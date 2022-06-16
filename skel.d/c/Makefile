@@ -20,7 +20,7 @@ run: $(PROG)
 	./$(PROG)
 
 edit:
-	vis '+vsplit main.c' Makefile main.h
+	vis '+vsplit main.h' Makefile main.c
 
 clean:
 	$(RM) $(PROG)
